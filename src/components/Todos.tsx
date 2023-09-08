@@ -1,8 +1,9 @@
 import { Todo } from "./Todo";
-import { ListOfTodos, TodoId } from "./types";
+import { type Todo as TodoType, type ListOfTodos, type TodoId } from "./types";
 
 interface Props {
   todos: ListOfTodos;
+  onCompleted: ({ id, completed }: Pick<TodoType, "id" | "completed" ) => void;
   onRemoveTodo: ({ id }: TodoId) => void;
 }
 

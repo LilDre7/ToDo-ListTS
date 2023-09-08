@@ -47,7 +47,11 @@ const App: React.FC = () => {
   return (
     <>
       <div className="todoapp">
-        <Todos onRemoveTodo={handleRemove} todos={todos} />
+        <Todos
+          onCompleted={handleCompleted}
+          onRemoveTodo={handleRemove}
+          todos={todos}
+        />
       </div>
     </>
   );
