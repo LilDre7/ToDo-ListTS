@@ -12,7 +12,7 @@ const mockTodos = [
   {
     id: "1",
     title: "Aprender React con midudev",
-    completed: true,
+    completed: false,
   },
   {
     id: "2",
@@ -60,18 +60,23 @@ const App: React.FC = () => {
   const activeCount = todos.filter((todo) => !todo.completed).length;
   const completedCount = todos.length - activeCount;
 
+  const filteredTodos = todos.filter((todo) => {
+    if (filterSelected === TODO_FILTERS.ALL) return true;
+    if (filterSelected === TODO_FILTERS.ACTIVE) return !todo.completed;
+    if (filterSelected === TODO_FILTERS.COMPLETED) return todo.completed;
+  });
+
   return (
     <>
       <div className="todoapp">
         <Todos
           onCompleted={handleCompleted}
           onRemoveTodo={handleRemove}
-          todos={todos}
+          todos={filteredTodos}
         />
         <Footer
           activeCount={activeCount}
           completedCount={completedCount}
-          // filterOptions={TODO_FILTERS}
           filterSelected={filterSelected}
           handleFilterChange={handleFilterChange}
         />
