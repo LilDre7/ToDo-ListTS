@@ -28,7 +28,9 @@ const mockTodos = [
 
 const App: React.FC = () => {
   const [todos, setTodos] = useState(mockTodos);
-  const [filterSelected, setFilterSelected] = useState(TODO_FILTERS.ALL);
+  const [filterSelected, setFilterSelected] = useState<FilterValue>(
+    TODO_FILTERS.ALL
+  );
 
   const handleRemove = ({ id }: TodoId) => {
     const newTodos = todos.filter((todo) => todo.id !== id);
@@ -55,6 +57,9 @@ const App: React.FC = () => {
     setFilterSelected(filter);
   };
 
+  const activeCount = todos.filter((todo) => !todo.completed).length;
+  const completedCount = todos.length - activeCount;
+
   return (
     <>
       <div className="todoapp">
@@ -64,8 +69,11 @@ const App: React.FC = () => {
           todos={todos}
         />
         <Footer
+          activeCount={activeCount}
+          completedCount={completedCount}
+          // filterOptions={TODO_FILTERS}
           filterSelected={filterSelected}
-          onFilterChange={handleFilterChange}
+          handleFilterChange={handleFilterChange}
         />
       </div>
     </>
