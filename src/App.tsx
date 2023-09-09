@@ -24,6 +24,11 @@ const mockTodos = [
     title: "Ir a patinar a las 4:40",
     completed: false,
   },
+  {
+    id: "4",
+    title: "Viva la LDA",
+    completed: false,
+  },
 ];
 
 const App: React.FC = () => {
