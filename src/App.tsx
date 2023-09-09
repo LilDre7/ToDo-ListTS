@@ -1,6 +1,12 @@
 import { useState } from "react";
 import { Todos } from "./components/Todos";
-import { type TodoId, type Todo as TodoType } from "./components/types";
+import {
+  FilterValue,
+  type TodoId,
+  type Todo as TodoType,
+} from "./components/types";
+import { TODO_FILTERS } from "./consts/consts";
+import { Footer } from "./components/Footer";
 
 const mockTodos = [
   {
@@ -22,6 +28,7 @@ const mockTodos = [
 
 const App: React.FC = () => {
   const [todos, setTodos] = useState(mockTodos);
+  const [filterSelected, setFilterSelected] = useState(TODO_FILTERS.ALL);
 
   const handleRemove = ({ id }: TodoId) => {
     const newTodos = todos.filter((todo) => todo.id !== id);
@@ -44,6 +51,10 @@ const App: React.FC = () => {
     setTodos(newTodos);
   };
 
+  const handleFilterChange = (filter: FilterValue): void => {
+    setFilterSelected(filter);
+  };
+
   return (
     <>
       <div className="todoapp">
@@ -51,6 +62,10 @@ const App: React.FC = () => {
           onCompleted={handleCompleted}
           onRemoveTodo={handleRemove}
           todos={todos}
+        />
+        <Footer
+          filterSelected={filterSelected}
+          onFilterChange={handleFilterChange}
         />
       </div>
     </>
