@@ -8,10 +8,17 @@ interface Props {
 export const Header: React.FC<Props> = ({ onAddTodo }) => {
   return (
     <header className="header">
-      <h1>
+      <h1
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: "2rem",
+        }}
+      >
         Todo
         <img
-          style={{ width: "60px", height: "60px" }}
+          style={{ width: "60px", height: "60px", alignItems: "center" }}
           src="https://i.pinimg.com/564x/6c/c8/0f/6cc80f860df186cdd1736bd54012062b.jpg"
           alt="TypeScript"
         />

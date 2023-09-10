@@ -13,22 +13,7 @@ import { Header } from "./components/Header";
 const mockTodos = [
   {
     id: "1",
-    title: "Aprender React con midudev",
-    completed: false,
-  },
-  {
-    id: "2",
-    title: "Aprender Ingles con el teacher miguel",
-    completed: false,
-  },
-  {
-    id: "3",
-    title: "Ir a patinar a las 4:40",
-    completed: false,
-  },
-  {
-    id: "4",
-    title: "Viva la LDA",
+    title: "¿Cuales son sus tareas pendientes? ⚔️ ",
     completed: false,
   },
 ];
@@ -99,10 +84,10 @@ const App: React.FC = () => {
           todos={filteredTodos}
         />
         <Footer
-          activeCount={activeCount}
-          completedCount={completedCount}
-          filterSelected={filterSelected}
           handleFilterChange={handleFilterChange}
+          completedCount={completedCount}
+          activeCount={activeCount}
+          filterSelected={filterSelected}
           onCompleted={handleRemoveAllCompleted}
           onFilterChange={handleFilterChange}
         />
