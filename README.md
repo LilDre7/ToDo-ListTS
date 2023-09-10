@@ -1,27 +1,41 @@
-# React + TypeScript + Vite
+# Proyecto To-Do List - README
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Desarrollador
 
-Currently, two official plugins are available:
+- Nombre: Alvaro Aburto Ocampo 🧑🏾‍💻
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tutorial
 
-## Expanding the ESLint configuration
+- Tutorial: miduduv
+- Duración: 2 horas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Temas Cubiertos
 
-- Configure the top-level `parserOptions` property like this:
+- TypeScript
+- React Hooks
+- Vite
+- Componentes e Interfaces
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## Descripción
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Este proyecto es una implementación de una lista de tareas (To-Do List) con una serie de características impresionantes. El tutorial fue proporcionado por miduduv y tiene una duración de 2 horas. Durante el tutorial, se cubrieron los siguientes temas:
+
+- Uso de TypeScript para desarrollar aplicaciones más seguras y mantenibles.
+- Implementación de React Hooks para gestionar el estado y el ciclo de vida de los componentes.
+- Uso de Vite como un entorno de desarrollo rápido para aplicaciones web.
+- Creación de componentes reutilizables para mejorar la organización del código.
+- Implementación de interfaces para definir la estructura de los datos.
+
+Este proyecto de lista de tareas permite a los usuarios realizar las siguientes acciones:
+
+- Crear nuevas tareas.
+- Marcar tareas como completadas.
+- Eliminar tareas.
+- Ver todas las tareas, las tareas completadas y las tareas activas.
+- Disfrutar de animaciones y un diseño atractivo que hacen que la experiencia del usuario sea agradable.
+
+¡Disfruta explorando y utilizando esta aplicación de lista de tareas! Siéntete libre de contribuir o personalizarla según tus necesidades.
+
+---
+
+_Por favor, asegúrate de seguir los términos y condiciones del tutorial proporcionado por miduduv para su uso adecuado._
