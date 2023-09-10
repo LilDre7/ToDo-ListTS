@@ -23,7 +23,6 @@ export const Todo: React.FC<Props> = ({
         }}
       />
       <label>{title}</label>
-      <span style={{ display: "none" }}>{id}</span>
       <button
         className="destroy"
         onClick={() => {

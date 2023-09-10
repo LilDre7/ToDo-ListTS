@@ -27,6 +27,7 @@ const App: React.FC = () => {
   const handleRemove = ({ id }: TodoId) => {
     const newTodos = todos.filter((todo) => todo.id !== id);
     setTodos(newTodos);
+    console.log(newTodos);
   };
 
   const handleCompleted = ({
