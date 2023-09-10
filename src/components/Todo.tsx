@@ -2,7 +2,7 @@ import { TodoId, type Todo as TodoType } from "./types";
 
 interface Props extends TodoType {
   onCompleted: ({ id, completed }: Pick<TodoType, "id" | "completed">) => void;
-  onRemoveTodo: ({ id }: TodoId) => void;
+  onRemoveTodo: (todo: TodoId) => void;
 }
 
 export const Todo: React.FC<Props> = ({

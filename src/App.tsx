@@ -9,14 +9,7 @@ import {
 import { TODO_FILTERS } from "./consts/consts";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
-
-const mockTodos = [
-  {
-    id: "1",
-    title: "¿Cuales son sus tareas pendientes? ⚔️ ",
-    completed: false,
-  },
-];
+import { mockTodos } from "./Mocks/mocksFirts";
 
 const App: React.FC = () => {
   const [todos, setTodos] = useState(mockTodos);
