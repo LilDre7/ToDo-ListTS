@@ -24,7 +24,7 @@ export const CreateTodo: React.FC<Props> = ({ saveTodo }) => {
           setInputValue(e.target.value);
         }}
         onKeyDown={() => {}}
-        placeholder="What needs to be done?"
+        placeholder="¿Cuales son tus tareas?"
         autoFocus
       />
     </form>
