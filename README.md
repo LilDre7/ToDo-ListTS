@@ -1,4 +1,4 @@
-# Proyecto todo list 📘   dddddddddddd
+# Proyecto todo list 📘   ddd
 
 ## Desarrollador
 
