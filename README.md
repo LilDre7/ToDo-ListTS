@@ -1,4 +1,4 @@
-# Proyecto todo list 📘  sas
+# Proyecto todo list 📘
 
 ## Desarrollador
 
