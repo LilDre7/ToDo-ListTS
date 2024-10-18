@@ -1,5 +1,5 @@
 # Proyecto todo list 📘
-wqw
+
 ## Desarrollador
 
 - Nombre: Alvaro Aburto Ocampo 🧑🏾‍💻
