@@ -1,4 +1,4 @@
-# Proyecto todo list 📘wwwqwq
+# Proyecto todo list 📘
 
 ## Desarrollador
 
